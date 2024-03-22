@@ -1,10 +1,5 @@
 import requests, os, random
-# Why are there API keys right here?
-#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
-#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
-#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
-#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
-#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
+# So you may need to regenerate the API key.
 
 #penting
 #InsomniaGPT-V1
@@ -127,7 +122,7 @@ user_agents = ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KH
 def testapikey():
     global api_key
     fip = '192.154.4.5'
-    api_key = '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'
+    api_key = 'ookaaa booka'
     url = "https://api.openai.com/v1/chat/completions"
     head = {
         "Content-Type": "application/json",
@@ -151,7 +146,7 @@ def testapikey():
         api_key = api_key.replace(api_key, i)
     else:
         print('Your Api Key Is Valid, Enjoy!.')
-        api_key = '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'
+        api_key = 'haha this is not a valid key!'
     return api_key
 api_key = testapikey()
 print('')
